@@ -8,7 +8,7 @@
 
 ### [Домашняя страница магазина](https://sunshine-pvl.vercel.app)
 
-### [Домашняя страница CMS](https://sunshine-store-admin.vercel.app)
+### [CMS](https://sunshine-store-admin.vercel.app)
 
 ## Домашняя страница
 
@@ -18,7 +18,8 @@
 
 ![cart-page](screenshots/cart-page.jpg)
 
-## Шаблон .env  
+## Шаблон .env
+
 ```dotenv
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
