@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["tailwindui.com", "res.cloudinary.com"]
-    }
+        remotePatterns: [{
+            protocol: "https", hostname: "res.cloudinary.com",
+        },], minimumCacheTTL: 1500000,
+    },
 };
 
 module.exports = nextConfig;
