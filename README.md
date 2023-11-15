@@ -6,6 +6,10 @@
 
 ### Разработка IT-проекта
 
+### [Домашняя страница магазина](https://sunshine-pvl.vercel.app)
+
+### [Домашняя страница CMS](https://sunshine-store-admin.vercel.app)
+
 ## Домашняя страница
 
 ![home-page](screenshots/home-page.jpg)
