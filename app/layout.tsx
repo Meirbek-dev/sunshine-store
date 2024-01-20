@@ -10,24 +10,24 @@ import "./globals.css";
 const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sunshine",
-  description: "Sunshine - Женская красота в новом свете.",
+	title: "Sunshine",
+	description: "Sunshine - Женская красота в новом свете.",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="ru">
-      <body className={font.className}>
-        <ToastProvider />
-        <ModalProvider />
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="ru">
+			<body className={font.className}>
+				<ToastProvider />
+				<ModalProvider />
+				<Navbar />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }
