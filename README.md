@@ -1,14 +1,8 @@
 # sunshine-store
 
-## Анализ и управление информационными проектами и ресурсами
+## [Домашняя страница магазина](https://sunshine-pvl.vercel.app)
 
-### Бейсенов М.К. МИС-22н
-
-### Разработка IT-проекта
-
-### [Домашняя страница магазина](https://sunshine-pvl.vercel.app)
-
-### [CMS](https://sunshine-store-admin.vercel.app)
+## [CMS](https://sunshine-store-admin.vercel.app)
 
 ## Домашняя страница
 

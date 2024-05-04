@@ -8,7 +8,7 @@ const Footer = () => {
 			<div className="h-6 md:h-6 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-6 lg:px-8 max-w-7xl">
 				<div className="absolute left-1/2 -translate-x-1/2">
 					<p className="text-center md:text-center text-xs text-black mb-2 md:mb-0 flex items-center flex-grow">
-						&copy; 2023 Sunshine, Павлодар.
+						&copy; 2024 Sunshine, Павлодар.
 					</p>
 				</div>
 				<div className="absolute right-0 px-4 sm:px-6 lg:px-8">
