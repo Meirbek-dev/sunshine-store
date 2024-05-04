@@ -1,39 +1,40 @@
 {
-	"name": "sunshine-store",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"build": "next build",
-		"dev": "next dev",
-		"lint": "next lint",
-		"start": "next start"
-	},
-	"dependencies": {
-		"@headlessui/react": "^1.7.18",
-		"@mdi/font": "^7.4.47",
-		"axios": "^1.6.8",
-		"clsx": "^2.1.0",
-		"date-fns": "^3.6.0",
-		"lucide-react": "^0.364.0",
-		"next": "^14.1.4",
-		"query-string": "^9.0.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-hot-toast": "^2.4.1",
-		"react-spinners": "^0.13.8",
-		"tailwind-merge": "^2.2.2",
-		"zustand": "^4.5.2"
-	},
-	"devDependencies": {
-		"@types/node": "^20.12.4",
-		"@types/react": "^18.2.74",
-		"@types/react-dom": "^18.2.24",
-		"autoprefixer": "^10.4.19",
-		"@tailwindcss/aspect-ratio": "^0.4.2",
-		"eslint": "^8.57.0",
-		"eslint-config-next": "^14.1.4",
-		"tailwindcss": "^3.4.3",
-		"typescript": "^5.4.3",
-		"postcss": "^8.4.38"
-	}
+  "name": "sunshine-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.19",
+    "@mdi/font": "^7.4.47",
+    "axios": "^1.6.8",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.378.0",
+    "next": "^14.2.3",
+    "query-string": "^9.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-spinners": "^0.13.8",
+    "tailwind-merge": "^2.3.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "eslint": "^9.2.0",
+    "eslint-config-next": "^14.2.3",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5",
+    "postcss": "^8.4.38"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
