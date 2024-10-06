@@ -1,37 +1,42 @@
-import {forwardRef} from "react";
+import { forwardRef } from "react";
 
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-}
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
-                                                               className, children, disabled, type = 'button', ...props
-                                                           }, ref) => {
-    return (<button
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, children, disabled, type = "button", ...props }, ref) => {
+    return (
+      <button
         type={type}
-        className={cn(`
-        w-auto 
-        rounded-full 
-        bg-black
+        className={cn(
+          `
+        w-auto
+        rounded-full
         border
         border-transparent
-        px-5 
-        py-3 
-        disabled:cursor-not-allowed 
-        disabled:opacity-50
-        text-white
+        bg-black
+        px-5
+        py-3
         font-semibold
-        hover:opacity-75
+        text-white
         transition
-      `, disabled && 'opacity-75 cursor-not-allowed', className)}
+        hover:opacity-75
+        disabled:cursor-not-allowed
+        disabled:opacity-50
+      `,
+          disabled && "cursor-not-allowed opacity-75",
+          className,
+        )}
         disabled={disabled}
         ref={ref}
         {...props}
-    >
+      >
         {children}
-    </button>);
-});
+      </button>
+    );
+  },
+);
 
 Button.displayName = "Button";
 
