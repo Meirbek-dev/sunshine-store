@@ -24,6 +24,7 @@
     "@headlessui/react": "2.1.9",
     "axios": "1.7.7",
     "clsx": "2.1.1",
+    "eslint-plugin-react-compiler": "^0.0.0-experimental-9a75bad-20241003",
     "lucide-react": "0.447.0",
     "next": "14.2.14",
     "query-string": "9.1.0",
