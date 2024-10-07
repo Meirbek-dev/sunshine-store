@@ -38,7 +38,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
 
   return (
     <div
-      onKeyDown={handleClick}
+      onClick={handleClick}
       className="group cursor-pointer space-y-4 rounded-xl border bg-white p-3"
     >
       {/* Изображение и действия */}

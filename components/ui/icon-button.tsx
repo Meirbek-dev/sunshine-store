@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface IconButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
-  icon: React.ReactElement;
+  icon: React.ReactElement<any>;
   className?: string;
 }
 
