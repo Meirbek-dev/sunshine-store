@@ -26,13 +26,11 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
 
   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();
-
     previewModal.onOpen(data);
   };
 
   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();
-
     cart.addItem(data);
   };
 
@@ -45,8 +43,8 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
       <div className="relative aspect-square rounded-xl bg-gray-100">
         <Image
           fill
-          src={data.images?.[0]?.url}
-          alt=""
+          src={data.images?.[0]?.url || "/fallback-image.png"}
+          alt={data.name}
           className="aspect-square rounded-md object-cover"
           style={{
             maxWidth: "100%",
@@ -65,11 +63,11 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
       {/* Описание */}
       <div>
         <p className="text-lg font-semibold">{data.name}</p>
-        <p className="text-sm text-gray-500">{data.category?.name}</p>
+        <p className="text-sm text-gray-500">{data.category?.name || "Uncategorized"}</p>{" "}
       </div>
       {/* Цена */}
       <div className="flex items-center justify-between">
-        <Currency value={data?.price} />
+        <Currency value={data?.price || 0} />
       </div>
     </div>
   );

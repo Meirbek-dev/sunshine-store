@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo -p 3001",
+    "dev": "next dev --turbopack -p 3001",
     "lint": "eslint --cache .",
     "check": "tsc --incremental --noEmit",
     "start": "next start",
@@ -20,39 +20,40 @@
     "format-check": "prettier --check --cache ."
   },
   "dependencies": {
-    "@headlessui/react": "2.1.10",
-    "@vercel/functions": "^1.4.2",
-    "axios": "1.7.7",
+    "@headlessui/react": "2.2.0",
+    "@vercel/functions": "^1.5.1",
+    "axios": "1.7.9",
     "clsx": "2.1.1",
-    "eslint-plugin-react-compiler": "^19.0.0-beta-8a03594-20241020",
-    "lucide-react": "0.453.0",
-    "next": "15.0.1-canary.1",
+    "eslint-plugin-react-compiler": "^19.0.0-beta-df7b47d-20241124",
+    "lucide-react": "0.468.0",
+    "next": "15.0.4",
     "query-string": "9.1.1",
-    "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-hot-toast": "2.4.1",
     "sunshine-store": "file:",
-    "tailwind-merge": "2.5.4",
-    "zustand": "^5.0.0"
+    "tailwind-merge": "2.5.5",
+    "zustand": "^5.0.2"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "0.4.2",
-    "@types/node": "22.7.8",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "@types/node": "22.10.1",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
     "autoprefixer": "10.4.20",
     "date-fns": "4.1.0",
-    "eslint": "9.13.0",
-    "eslint-config-next": "15.0.1-canary.1",
-    "postcss": "8.4.47",
-    "prettier": "3.3.3",
-    "prettier-plugin-tailwindcss": "0.6.8",
-    "tailwindcss": "3.4.14",
-    "typescript": "5.6.3",
-    "typescript-eslint": "^8.11.0"
+    "eslint": "9.16.0",
+    "eslint-config-next": "15.0.4",
+    "postcss": "8.4.49",
+    "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "0.6.9",
+    "tailwindcss": "3.4.16",
+    "typescript": "5.7.2",
+    "typescript-eslint": "^8.17.0"
   },
+  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab",
   "overrides": {
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0"
   }
 }
