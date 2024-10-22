@@ -14,7 +14,15 @@ const GalleryTab: React.FC<GalleryTabProps> = ({ image }) => {
       {({ selected }) => (
         <div>
           <span className="absolute inset-0 aspect-square h-full w-full overflow-hidden rounded-md">
-            <NextImage fill src={image.url} alt="" className="object-cover object-center" />
+            <NextImage
+              fill
+              src={image.url}
+              alt=""
+              className="object-cover object-center"
+              style={{
+                maxWidth: "100%",
+              }}
+            />
           </span>
           <span
             className={cn(

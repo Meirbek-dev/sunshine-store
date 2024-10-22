@@ -12,7 +12,7 @@ const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Sunshine",
-  description: "Sunshine - Женская красота в новом свете.",
+  description: "Sunshine - Женская красота в новом свете."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

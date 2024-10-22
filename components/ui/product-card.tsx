@@ -44,10 +44,13 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
       {/* Изображение и действия */}
       <div className="relative aspect-square rounded-xl bg-gray-100">
         <Image
+          fill
           src={data.images?.[0]?.url}
           alt=""
-          fill
           className="aspect-square rounded-md object-cover"
+          style={{
+            maxWidth: "100%",
+          }}
         />
         <div className="absolute bottom-5 w-full px-6 opacity-0 transition group-hover:opacity-100">
           <div className="flex justify-center gap-x-6">

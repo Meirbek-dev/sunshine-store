@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Plus, X } from "lucide-react";
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogPanel } from "@headlessui/react";
 
 import IconButton from "@/components/ui/icon-button";
 import Button from "@/components/ui/button";
@@ -34,7 +34,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({ sizes, colors }) => {
 
         {/* Позиция диалога */}
         <div className="fixed inset-0 z-40 flex">
-          <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-6 shadow-xl">
+          <DialogPanel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-6 shadow-xl">
             {/* Кнопка закрытия */}
             <div className="flex items-center justify-end px-4">
               <IconButton icon={<X size={15} />} onClick={onClose} />
@@ -44,7 +44,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({ sizes, colors }) => {
               <Filter valueKey="sizeId" name="Размеры" data={sizes} />
               <Filter valueKey="colorId" name="Цвета" data={colors} />
             </div>
-          </Dialog.Panel>
+          </DialogPanel>
         </div>
       </Dialog>
     </>
